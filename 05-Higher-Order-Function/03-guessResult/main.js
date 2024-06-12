@@ -31,3 +31,13 @@ function adder(a) {
 let add5 = adder(5);
 console.log(add5(3)); // Output: 8
 console.log(add5(7)); // Output: 12
+
+function makeWorker() {
+    let name = 'Pete';
+    return function () {
+      alert(name);
+    };
+  }
+  let name = 'John';
+  let work = makeWorker();
+  work(); // * Pete
